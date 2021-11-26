@@ -1,0 +1,110 @@
+/************** Dont change anything in the body ******************/
+body {
+	background: url(../img/12_col.gif) center top repeat-y;
+	background-size: 90%;
+}
+/***********************************************************/
+
+/* Begin coding your solution below */
+
+
+
+[class*="border"] {
+    border: 1px solid #333;
+}
+
+
+
+.container {
+
+/* border: 1px solid #333; */
+height: 700px;
+width: 89%;
+margin: 0 auto;
+    display: grid;
+   /* grid-template-columns: 312px 2px 2px  740px; */
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px 20px;
+    grid-template-rows: repeat(4, 160px);
+    opacity: 0.8;
+   
+
+
+
+/* grid-template-areas: 
+      "header header header"
+      "box1 box2 box3"
+      "content" "content" "sidebar"
+      "footer-frame" "footer1 footer2 footer3 footer4";
+  } */
+}
+
+#header {
+    /* background-color: blue; */
+     grid-column: 1 / 13;
+    /* grid-row: 1 / 4;  */
+    
+    
+}
+#box1 {
+    /* background-color:blueviolet; */
+    grid-column: 1 / 4; 
+   
+}
+#box2 {
+    /* background-color: rgb(255, 0, 119); */
+    grid-column: 4 / 10;
+}
+#box3 {
+    /* background-color: rgb(217, 255, 0); */
+     grid-column: 10 / 13;
+} 
+#content {
+    /* background-color: rgb(0, 255, 157); */
+    grid-column: 1 / 9;
+   
+    
+}
+#sidebar {
+    /* background-color: rgb(255, 0, 0); */
+    grid-column: 9 / 13;
+   
+    
+}
+
+#footer-frame {
+    /* background-color: burlywood; */
+     grid-area: 4 / 1 / 5 / 13; 
+    /* opacity: 0.5; */
+}
+
+#footer1 {
+    /* background-color: rgb(24, 0, 23); */
+     grid-area: 4 / 1 / 5 / 4; 
+     margin: 10px 0 10px 10px;
+    
+    
+     
+}
+#footer2 {
+    /* background-color: rgb(0, 195, 255); */
+    
+        grid-area: 4 / 4 / 5 / 7;  
+        margin: 10px 0;
+      
+} 
+#footer3 {
+    /* background-color: rgb(30, 255, 0); */
+
+        grid-area: 4 / 7 / 5 / 10; 
+        margin: 10px 0;
+      
+     
+}
+#footer4 {
+    /* background-color: rgb(0, 255, 42); */
+      grid-area: 4 / 10 / 5 / 13; 
+      margin: 10px 10px 10px 0;
+  
+}
+
